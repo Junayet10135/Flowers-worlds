@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Flowers from './components/Flowers/Flowers';
 
 function App() {
   return (
     <div className="App">
-     <h2> Assignment 8</h2>
+     <Flowers></Flowers>
     </div>
   );
 }
