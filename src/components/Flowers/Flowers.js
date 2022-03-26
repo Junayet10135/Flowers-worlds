@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Flower from '../Flower/Flower';
-import QuesAns from '../QuesAns/QuesAns';
 import './Flowers.css'
 
 const Flowers = () => {
@@ -14,7 +13,6 @@ useEffect(() =>{
     .then(data => setFlower(data))
 },[]);
      const chooseBtn = () =>{
-        //console.log(cart);
         let select = [];
         const run = Math.floor(Math.random() * cart.length);
         select.push(cart[run]);
@@ -25,7 +23,6 @@ useEffect(() =>{
         setCart(again);
     }
   const handleAddToCart = (product) =>{
-       // console.log(product);
         const newCart = [...cart, product];
         setCart(newCart);
     }
