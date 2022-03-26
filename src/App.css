@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,600&display=swap');
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
 }
 .Heading{
 font-family: 'Red Hat Mono',
 monospace;
-font-size: 3rem;
+font-size: 2rem;
 color: rgb(90, 172, 145);
+}
+@media screen and (max-width:600px){
+  .App{
+    text-align: center;
+    overflow-x: hidden;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

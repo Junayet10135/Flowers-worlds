@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 25% 20px;
     background-color: rgb(250, 245, 245);
+    width: 350px;
 }
 .flower-list{
     background: #a59e94;
