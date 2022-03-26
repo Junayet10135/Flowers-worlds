@@ -5,12 +5,12 @@
     padding: 30px 20px;
     box-shadow: 12px 12px 2px 1px rgba(130, 130, 145, 0.3);
     box-sizing: border-box;
-    margin: 25% 20px;
+    margin: 25% 0px;
     background-color: rgb(250, 245, 245);
-    width: 350px;
+    width: 300px;
 }
 .flower-list{
-    background: #a59e94;
+    background: #b7c76f;
     border-radius: 10px;
     padding: 5px 10px;
     margin: 5px;
@@ -27,7 +27,7 @@
 }
 .choose-btn{
     width: 100%;
-    background: #FFE0B3;
+    background: #e8c8f5;
     border: none;
     border-radius: 10px;  
     padding: 10px;
@@ -38,14 +38,14 @@
 }
 .again-btn{
     width: 100%;
-    background: #FFE0B3;
+    background: #e8c8f5;
     border: none;
    border-radius: 10px;
-   padding: 10px;
-   margin: 5px;
+   padding: 10px;  
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
 }
 .again-btn:hover {
     background-color: orangered;
@@ -55,3 +55,4 @@
     background-color: orangered;
     color: whitesmoke;
 }
+

@@ -1,8 +1,8 @@
 .flower img {
-    width: 286px;
+    width: 280px;
     height: 286px;
     border-radius: 10px;
-    margin: 7px;
+    margin: 5px;
 }
 
 .flower {
@@ -20,7 +20,7 @@
 }
 .btn-cart {
     width: 100%;
-    background: #FFE0B3;
+    background: #e8c8f5;
     border: none;
     border-radius: 0px 0px 8px 8px;
     position: absolute;

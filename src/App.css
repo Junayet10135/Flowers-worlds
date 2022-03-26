@@ -13,12 +13,6 @@ monospace;
 font-size: 2rem;
 color: rgb(90, 172, 145);
 }
-@media screen and (max-width:600px){
-  .App{
-    text-align: center;
-    overflow-x: hidden;
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
