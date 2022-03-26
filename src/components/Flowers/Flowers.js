@@ -6,11 +6,23 @@ import './Flowers.css'
 const Flowers = () => {
 const [flowers, setFlower] = useState([]);
 const [cart, setCart] = useState([]);
+
 useEffect(() =>{
     fetch ('flowers.json')
     .then(res => res.json())
     .then(data => setFlower(data))
 },[]);
+     const chooseBtn = () =>{
+        //console.log(cart);
+        let select = [];
+        const run = Math.floor(Math.random() * cart.length);
+        select.push(cart[run]);
+        setCart(select);
+    }
+    const chooseAgain = () =>{
+        const again = [];
+        setCart(again);
+    }
   const handleAddToCart = (product) =>{
        // console.log(product);
         const newCart = [...cart, product];
@@ -30,7 +42,10 @@ useEffect(() =>{
             </div>
             <div className="cart-container">
                 <Cart
+                    key = {cart.id}
                     cart = {cart}
+                    chooseBtn = {chooseBtn}
+                    chooseAgain = {chooseAgain}
                 ></Cart>
            </div>
         </div>

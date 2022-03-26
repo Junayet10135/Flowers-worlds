@@ -1,10 +1,7 @@
 import './Cart.css'
 
-const Cart = ({cart}) => {
-
-    const chooseBtn = () =>{
-        console.log('clicked');
-    }
+const Cart = ({cart , chooseBtn, chooseAgain}) => {
+   
     return (
         <div className='cart'>
             <h2>Selected Flowers</h2>
@@ -13,12 +10,14 @@ const Cart = ({cart}) => {
                 cart.map(item => 
                     
                     <h4>{item.name}</h4>
+                    
                 )
                 
             }
+            
             </div>
             <button onClick={chooseBtn}>CHOOSE 1 FOR ME</button>
-            <button>CHOOSE AGAIN</button>
+            <button onClick={chooseAgain}>CHOOSE AGAIN</button>
         </div>
     );
 };
