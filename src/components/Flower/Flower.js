@@ -10,7 +10,7 @@ const Flower = ({flower, handleAddToCart}) => {
             <img src={img} alt="" />
             <div className='flower-info'>
                 <h2>Flower Name: <small>{name}</small></h2>
-                <h2>Price: <small>{price}</small></h2>
+                <h2>Price: <small>${price}</small></h2>
             </div>
             <button  onClick={() =>handleAddToCart(flower)} className='btn-cart'>
                <p className='btn-text'>Add to Cart</p>

@@ -1,9 +1,56 @@
 .cart{
     position: sticky;
     top: 0;
-    border: 1px solid salmon;
+    border-radius: 0px 10px 0px 10px;
     padding: 30px 20px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px rgba(130, 130, 145, 0.3);
     box-sizing: border-box;
-    margin: 10px;
+    margin: 25% 20px;
+    background-color: rgb(250, 245, 245);
+}
+.flower-list{
+    background: #a59e94;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flower-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 7px;
+}
+.choose-btn{
+    width: 100%;
+    background: #FFE0B3;
+    border: none;
+    border-radius: 10px;  
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.again-btn{
+    width: 100%;
+    background: #FFE0B3;
+    border: none;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.again-btn:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+.choose-btn:hover {
+    background-color: orangered;
+    color: whitesmoke;
 }

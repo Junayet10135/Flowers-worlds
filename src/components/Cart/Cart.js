@@ -5,19 +5,22 @@ const Cart = ({cart , chooseBtn, chooseAgain}) => {
     return (
         <div className='cart'>
             <h2>Selected Flowers</h2>
-            <div className='flower-list'>
+            <div >
             {
                 cart.map(item => 
                     
-                    <h4>{item.name}</h4>
+                    <div className='flower-list'>
+                        <img src={item.img} alt="" />
+                        <h4 className='select-item'>{item.name}</h4>
+                    </div>
                     
                 )
                 
             }
             
             </div>
-            <button onClick={chooseBtn}>CHOOSE 1 FOR ME</button>
-            <button onClick={chooseAgain}>CHOOSE AGAIN</button>
+            <button className='choose-btn' onClick={chooseBtn}>CHOOSE 1 FOR ME</button>
+            <button className='again-btn' onClick={chooseAgain}>CHOOSE AGAIN</button>
         </div>
     );
 };
